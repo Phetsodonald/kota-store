@@ -1,0 +1,277 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+
+body{
+    margin-top:15%;
+    margin-bottom:20%;
+    background-color:RGB(245,245,245);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color:#738678;
+    height:12vh;
+    z-index:999;
+}
+
+
+.logo{
+    width:16%;
+    object-fit:cover;
+    border-top-right-radius:30%;
+    border-bottom-left-radius:30%;
+    border-top-left-radius:5%;
+    border-bottom-right-radius:5%;
+}
+header span{
+    color:#fff;
+    position:relative;
+    top:12%;
+    right:7%;
+    font:1.5em roboto;
+    font-weight:bold;
+}
+
+.cart-icon{
+    width:5vw;
+}
+
+
+
+.cart-icon:hover,.cart-icon-cover:hover{
+    cursor:pointer;
+}
+
+
+.cart-icon-cover{
+    height:10vh;
+    width:10vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    transition:all 0.25s;
+}
+
+
+.cart-icon-cover:active,.logo:active{
+    background-color:RGBA(192, 192, 192,0.4);
+    opacity:0.6;
+}
+
+
+.cart{
+    position:fixed;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    background-color:white;
+    display:none;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    padding:10px;
+    z-index:999;
+    border:2px solid white;
+    box-shadow:10px 10px 10px lightgrey;
+}
+
+
+
+.close-cart{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items:center;
+    justify-content:center;
+    width:50%;
+    margin-bottom:10%;
+    max-height:100vh;
+    column-gap:5%;
+}
+
+
+.cart-section{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+}
+
+
+.cart-items{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    width:100%;
+    padding:10px;
+}
+
+
+.total-amount{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    width:100%;
+    padding:10px;
+}
+
+
+main{
+    width:90%;
+}
+
+
+.menu{
+    color:#738678;
+    margin-bottom:4%;
+    font-family:roboto;
+    text-transform:capitalize;
+    cursor:default;
+}
+
+
+.large-section{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items:center;
+    justify-content:center;
+}
+
+
+.small-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.small-container{
+    display:none;
+    align-items:center;
+    justify-content:start;
+    column-gap:13em;
+    min-width:100%;
+    margin-top:20px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:10px 10px 10px lightgrey;
+}
+
+
+.small-container img{
+    width:10em;
+    height:10em;
+    border-radius:100%;
+}
+
+
+.small-container a{
+    color:#738678;
+    text-decoration:none;
+    text-transform:capitalize;
+}
+
+
+.container{
+    border:none;
+    box-shadow:10px 10px 10px  lightgrey;
+    border-radius:10px;
+    height:18em;
+    width:20em;
+    display:grid;
+    grid-template-rows:repeat(1,1fr 50px);
+    background-color:rgb(243,242,245);
+    padding:5px;
+}
+
+
+.container img{
+    width:10em;
+    height:10em;
+    object-fit:cover;
+    border-radius:100%;
+    box-shadow:10px 10px 10px lightgrey;
+    transition:all 0.35s;
+    z-index:20;
+}
+
+
+
+.container img:hover{
+    transform:translateY(-5px);
+}
+
+
+.image-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.container a{
+    text-decoration:none;
+    text-transform:capitalize;
+    font:1em roboto;
+    color:#738678;
+}
+
+
+.container a:active{
+    color:none;
+}
+
+
+.small-section{
+    display:flex;
+    align-items:center;
+}
+
+
+.small-container a{
+    width:10%;
+}
+
+
+footer{
+    position:fixed;
+    bottom:0;
+    right:0;
+    left:0;
+    padding:10px;
+    background-color:#738678;
+    height:3em;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    align-items:center;
+    justify-content:space-around;
+}
+
+
+footer .instagram-icon{
+    width:10%;
+}
+
